@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Final Challenge</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Images -->
+  <div class="container-fluid" style="border: 1px solid black;">
+    <img src="https://placehold.co/600x400" class="img-fluid" alt="Responsive image">
+  </div>
+  <img src="https://placehold.co/150" class="rounded-circle" alt="Circular image">
+
+  <!-- Buttons -->
+  <div class="container mt-5">
+    <button type="button" class="btn btn-primary w-50">Primary Button</button>
+    <button type="button" class="btn btn-success d-none d-md-block">Hidden on Small Screens</button>
+  </div>
+
+  
+  <!-- Form -->
+  <form class="needs-validation" novalidate>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="firstname" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstname" placeholder="Enter your first name">
+      </div>
+      <div class="col-md-6">
+        <label for="lastname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Enter your last name" >
+      </div>
+    </div>
+     <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control is-invalid" id="email" required>
+    <div class="invalid-feedback">
+      Please enter a valid email address.
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control is-invalid" id="password" required>
+    <div class="invalid-feedback">
+      Password is required.
+    </div>
+  </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+
+  <hr class="my-5">
+
+  <!-- Pre-populated Submissions Table -->
+  <h2>Previous Submissions</h2>
+  <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+          <td>password</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jane</td>
+          <td>Doe</td>
+          <td>jane@example.com</td>
+          <td>secure</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
